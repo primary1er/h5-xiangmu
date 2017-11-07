@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>追光之旅</title>
+	<meta name="keywords" content="追光之旅" />
+	<meta name="description" content="追光之旅" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <div class="logo none">
+        <img src="images/logo.png" class="llogo">
+        <div class="music">
+            <div class="music_bar"></div>
+            <div class="music_bar"></div>
+            <div class="music_bar"></div>
+            <div class="music_bar"></div>
+        </div>
+    </div>
+    <div class="page page_load">
+        <span>0%</span>
+        <div class="progress">
+            <div class="pro"></div>
+        </div>
+        <img src="images/loading_car.png" class="loading_car">
+        <p>“为了最佳体验，请锁定屏幕”</p>
+    </div>
+    <div class="page page_index none">
+        <img src="images/bt.png" class="bt none">
+        <img src="images/car.png" class="car infinite tada">
+        <img src="images/zw.png" class="zw none">
+        <img src="images/ca.png" class="ca none">
+        <canvas id="animation_canvas"></canvas>
+    </div>
+    <div class="page page_hj none">
+        <img src="images/clock.png" class="clock none">
+        <div class="hj">
+            <img src="images/hj.png" class="jl">
+            <div class="circle" data-id="1"></div>
+            <div class="circle" data-id="2"></div>
+            <div class="circle" data-id="3"></div>
+            <div class="circle" data-id="4"></div>
+            <div class="circle" data-id="5"></div>
+            <div class="circle" data-id="6"></div>
+            <div class="circle" data-id="7"></div>
+            <div class="circle" data-id="8"></div>
+            <div class="circle" data-id="9"></div>
+            <div class="circle" data-id="10"></div>
+            <div class="circle" data-id="11"></div>
+            <div class="circle" data-id="12"></div>
+            <div class="circle" data-id="13"></div>
+            <div class="circle" data-id="14"></div>
+            <div class="circle" data-id="15"></div>
+            <img src="images/tip.png" class="tip none">
+        </div>
+        <canvas id="line"></canvas>
+        <img src="images/jz.png" class="jz">
+    </div>
+    <div class="page page_sp none">
+        <video src="images/ljcy.mp4" preload="preload" id="ljcy"></video>
+    </div>
+    <div class="page page_dh none">
+	    	<div class="menu zj">
+	    		<img src="images/2016zj.png" class="left">
+	    		<img src="images/right.png" class="right">
+	    	</div>
+				<div class="menu ap">
+	    		<img src="images/2017ap.png" class="left">
+	    			    		<img src="images/right.png" class="right">
+
+	    	</div>
+	    	<div class="menu dr">
+	    		<img src="images/zjdr.png" class="left">
+	    			    		<img src="images/right.png" class="right">
+
+	    	</div>
+	    	<div class="menu gs">
+	    		<img src="images/jggs.png" class="left">
+	    			    		<img src="images/right.png" class="right">
+
+	    	</div>
+    </div>
+    <div class="page page_zj none">
+    	<img src="images/2016hg.png" class="zj_bt"/>
+    	<div class="slick single-item">
+        <div class=""><img src="images/2016tp.png" class="hd_img"/></div>
+                    <div class=""><img src="images/2016tp.png" class="hd_img"/></div>
+                    <div class=""><img src="images/2016tp.png" class="hd_img"/></div>
+                    <div class=""><img src="images/2016tp.png" class="hd_img"/></div>
+      </div>
+      <img src="images/left.png" class="back"/>
+	    <div class="zj_wa">
+	    	<img src="images/ap_nr.png">
+	    </div>
+    </div>
+    <div class="page page_ap none">
+    	<img src="images/2017wz.png" class="ap_bt"/>
+    	<img src="images/2017car.png" class="ap_car"/>
+    	<img src="images/ap.png" class="ap_ap"/>
+      <img src="images/left.png" class="back"/>
+	    <div class="ap_wa">
+	    	<img src="images/ap_nr.png">
+	    </div>
+    </div>
+    <div class="page page_dr none">
+    	<img src="images/zj_car.png" class="dr_car none"/>
+    	<img src="images/zm_bl.png" class="dr_bl none"/>
+      <img src="images/left.png" class="back"/>
+      <img src="images/zj_wa.png" class="dr_bt"/>
+	    <div class="form">
+	    	<form>
+	    		
+	    	<img src="images/zm_xxtx.png" class="form_bt" />
+	    	<img src="images/zm_xm.png" class="form_xm" />
+	    	<img src="images/zm_dh.png" class="form_dh" />
+	    	<input type="text" class="xm" id="dr_xm"/>
+	    	<input type="text" class="dh" id="dr_dh"/>
+	    	<img src="images/sub.png" class="sub" id="dr_sub">
+	    	<img src="images/zm_nan.png" class="form_nan" />
+	    	<img src="images/zm_nv.png" class="form_nv" />
+	    	<span class="dr_check active" data-id="1"></span>
+	    	<span class="dr_check" data-id="2"></span>
+	    	</form>
+	    </div>
+    </div>
+    <div class="page page_gs none">
+    	<div class="gs_lsj">
+    		<img src="images/lsj.png" class="lsj"/>
+    		<img src="images/zgzl.png" class="gs_zgzl"/>
+    	</div>
+    	
+      <img src="images/left.png" class="back"/>
+      <img src="images/xq.png" class="gs_bt"/>
+	    <div class="form">
+	    	<form>
+	    	<img src="images/zm_xxtx.png" class="form_bt" />
+	    	<img src="images/zm_xm.png" class="form_xm" />
+	    	<img src="images/zm_dh.png" class="form_dh" />
+	    	<input type="text" class="xm" id="dr_xm"/>
+	    	<input type="text" class="dh" id="dr_dh"/>
+	    	<img src="images/sub.png" class="sub" id="gs_sub">
+	    	<img src="images/zm_nan.png" class="form_nan" />
+	    	<img src="images/zm_nv.png" class="form_nv" />
+	    	<span class="gs_check active" data-id="1"></span>
+	    	<span class="gs_check" data-id="2"></span>
+	    	</form>
+	    </div>
+    </div>
+    <div class="page_tip none"> 
+    	<img src="images/tjcg.png" class="tip_img tjcg none"/>
+    	<img src="images/zmtc.png" class="tip_img zm none"/>
+    	<img src="images/zjtc.png" class="tip_img zjtc none"/>
+    	<img src="images/close.png" class="close"/>
+    </div>
+
+</body>
+</html>

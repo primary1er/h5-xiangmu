@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>骑逢对手</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <div class="musicBox">
+    	<img class="musicStartBtn" src="images/musicStartBtn.png" width="100%">
+    	<img class="musicCloseBtn" src="images/musicCloseBtn.png" width="100%">
+        <audio id="Jaudio" src="rongyu.mp3" preload autoplay="autoplay" loop></audio>
+    </div>
+    <div class="page page_percen">
+        <div class="logo"><img src="images/logo.png" width="100%"></div>
+        <div class="posDiv bg"><img src="images/page_upload_bg.jpg" width="100%"></div>
+        <div class="cloudBox">
+            <img class="cloud01" src="images/page_upload_cloud01.png" width="100%">
+            <img class="cloud02" src="images/page_upload_cloud02.png" width="100%">
+            <img class="cloud03" src="images/page_upload_cloud03.png" width="100%">
+        </div>
+        <div class="canvasBox">
+        	<canvas id="myCanvas" width="442" height="625"></canvas>
+        </div>
+        <div class="conBox">
+            <img src="images/page_help_con.png" width="100%">
+            <!--头像Begin-->
+            <div class="txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+            <!--头像End-->
+            <div class="canvasPngHolder" id="canvasPngHolder"></div>
+            <div class="tsBox"><img src="images/page_percen_ts.png" width="100%"></div>
+        </div>
+        <div class="btnBox">
+            <div class="btn-warp">
+                <!--邀ta助力-->
+            	<div class="btn-01">
+                	<img src="images/page_percen_btn01.png" width="100%" id="shareBtn">
+                </div>
+                <!--排行榜-->
+            	<div class="btn-02">
+                	<img src="images/page_percen_btn02.png" width="100%" id="phbBtn">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pup_warp_black"></div>
+    <!--排行榜弹窗-->
+    <div class="phb_pup_in">
+        <img src="images/page_phb_pup.png" width="100%">
+        <div class="phb_pup_info">
+			<ul>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <span><img src="images/phb_pup_li_01.png" width="100%"></span>
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <span><img src="images/phb_pup_li_02.png" width="100%"></span>
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <span><img src="images/phb_pup_li_03.png" width="100%"></span>
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <img class="phb_closeBtn" src="images/page_index_pup_close.png" width="100%" id="phb_closeBtn">
+    </div>
+    <!--分享弹窗-->
+    <div class="share_pup_in">
+        <img src="images/page_percen_pup_share.png" width="100%">
+        <img class="share_closeBtn" src="images/page_index_pup_close.png" width="100%" id="share_closeBtn">
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/percen.js"></script>

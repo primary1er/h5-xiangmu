@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>你竟是这样的父母</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+</head>
+<body>
+    <div class="musicBox">
+        <audio id="Jaudio" src="musicBg.mp3" preload autoplay="autoplay" loop></audio>
+    </div>
+	<div class="loadpage">
+    	<div class="load_k"><img src="images/load_k.png" width="100%" height="100%"></div>
+    	<div class="load_c"><img src="images/load_info.png" width="100%"></div>
+        <!-- 加载动画 -->
+        <div class="loadBox" id="progressBox" style="width:200px;">
+              <div id="progressBar"></div>
+              <div id="progressTxt"></div>
+        </div>
+        <div class="wriArea">loading…</div>
+    </div>
+	<div class="homepage">
+    	<div class="home_posdiv home_t"><img src="images/index_top.png" width="100%"></div>
+    	<div class="home_posdiv home_l"><img src="images/index_left.png" width="100%"></div>
+    	<div class="home_posdiv home_r"><img src="images/index_right.png" width="100%"></div>
+    	<div class="home_posdiv home_b"><img src="images/index_ren.png" width="100%"></div>
+    	<div class="home_posdiv home_c">
+        	<div><img src="images/index_logo.png" width="100%"></div>
+        	<div><img src="images/index_wri01.png" width="100%"></div>
+        	<div><img src="images/index_wri02.png" width="100%"></div>
+        	<div><img src="images/index_wri03.png" width="100%"></div>
+        </div>
+        <div class="home_btn" id="startBtn"><img src="images/index_btn.png" width="100%"></div>
+    </div>
+    <div class="warppage">
+        <div class="page page01">
+            <div class="box_top">
+                <img src="images/page_top.jpg" width="100%">
+                <div class="box_wri"><img src="images/wri01.png" width="100%"></div>
+                <div class="bt_kt"></div>
+            </div>
+            <div class="box_con">
+                <div class="info">
+                    <span><img src="images/page01_qi.png" width="100%"></span>
+                    <div class="info_mn info_mn01_01"></div>
+                    <div class="info_mn info_mn01_02"></div>
+                    <div class="info_mn info_mn01_03"></div>
+                </div>
+                <div class="bc_kc"></div>
+            </div>
+            <div class="box_btm">
+                <div class="bb_kb"></div>
+                <ul data-num="0">
+                    <li><img src="images/plo_01_01.png" width="100%"></li>
+                    <li><img src="images/plo_01_02.png" width="100%"></li>
+                    <li><img src="images/plo_01_03.png" width="100%"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="page page02">
+            <div class="box_top">
+                <img src="images/page_top.jpg" width="100%">
+                <div class="box_wri"><img src="images/wri02.png" width="100%"></div>
+                <div class="bt_kt"></div>
+            </div>
+            <div class="box_con">
+                <div class="info">
+                    <div class="info_mn info_mn02_01"></div>
+                    <div class="info_mn info_mn02_02"></div>
+                    <div class="info_mn info_mn02_03"></div>
+                    <div class="info_mn info_mn02_04"></div>
+                </div>
+                <div class="bc_kc"></div>
+            </div>
+            <div class="box_btm">
+                <div class="bb_kb"></div>
+                <ul data-num="1">
+                    <li><img src="images/plo_02_01.png" width="100%"></li>
+                    <li><img src="images/plo_02_02.png" width="100%"></li>
+                    <li><img src="images/plo_02_03.png" width="100%"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="page page03">
+            <div class="box_top">
+                <img src="images/page_top.jpg" width="100%">
+                <div class="box_wri"><img src="images/wri03.png" width="100%"></div>
+                <div class="bt_kt"></div>
+            </div>
+            <div class="box_con">
+                <div class="info">
+                    <div class="info_mn info_mn03_01"></div>
+                    <div class="info_mn info_mn03_02"></div>
+                    <div class="info_mn info_mn03_03"></div>
+                </div>
+                <div class="bc_kc"></div>
+            </div>
+            <div class="box_btm">
+                <div class="bb_kb"></div>
+                <ul data-num="2">
+                    <li><img src="images/plo_03_01.png" width="100%"></li>
+                    <li><img src="images/plo_03_02.png" width="100%"></li>
+                    <li><img src="images/plo_03_03.png" width="100%"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="page page04">
+            <div class="box_top">
+                <img src="images/page_top.jpg" width="100%">
+                <div class="box_wri"><img src="images/wri04.png" width="100%"></div>
+                <div class="bt_kt"></div>
+            </div>
+            <div class="box_con">
+                <div class="info">
+                    <span><img src="images/page04_jj.png" width="100%"></span>
+                    <div class="info_mn info_mn04_01"></div>
+                    <div class="info_mn info_mn04_02"></div>
+                    <div class="info_mn info_mn04_03"></div>
+                </div>
+                <div class="bc_kc"></div>
+            </div>
+            <div class="box_btm">
+                <div class="bb_kb"></div>
+                <ul data-num="3">
+                    <li><img src="images/plo_04_01.png" width="100%"></li>
+                    <li><img src="images/plo_04_02.png" width="100%"></li>
+                    <li><img src="images/plo_04_03.png" width="100%"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="page page05">
+            <div class="box_top">
+                <img src="images/page_top.jpg" width="100%">
+                <div class="box_wri"><img src="images/wri05.png" width="100%"></div>
+                <div class="bt_kt"></div>
+            </div>
+            <div class="box_con">
+                <div class="info">
+                    <div class="info_mn info_mn05_01"></div>
+                    <div class="info_mn info_mn05_02"></div>
+                    <div class="info_mn info_mn05_03"></div>
+                </div>
+                <div class="bc_kc"></div>
+            </div>
+            <div class="box_btm">
+                <div class="bb_kb"></div>
+                <ul data-num="4">
+                    <li><img src="images/plo_05_01.png" width="100%"></li>
+                    <li><img src="images/plo_05_02.png" width="100%"></li>
+                    <li><img src="images/plo_05_03.png" width="100%"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

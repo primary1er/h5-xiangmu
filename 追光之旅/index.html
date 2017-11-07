@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>中国两极穿越·追光之旅</title>
+		<meta name="keywords" content="中国两极穿越·追光之旅" />
+		<meta name="description" content="中国两极穿越·追光之旅" />
+    <meta name="viewport" content="user-scalable=no, width=750">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="js/share.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<div style="display: none;"><script src="https://s13.cnzz.com/z_stat.php?id=1263063723&web_id=1263063723" language="JavaScript"></script></div>
+	<audio id="bgmusic" src="bgmusic.mp3" preload autoplay="autoplay" loop></audio>
+	<audio id="sbl" src="sbl.mp3" preload></audio>
+		<img src="" data-src="images/bin-0.png" class="none">
+		<img src="" data-src="images/bin-1.png" class="none">
+		<img src="" data-src="images/bin-2.png" class="none">
+		<img src="" data-src="images/bin-3.png" class="none">
+		<img src="" data-src="images/bin-4.png" class="none">
+		<img src="" data-src="images/bin-5.png" class="none">
+    <div class="logo none">
+        <img src="" data-src="images/logo.png" class="llogo">
+        <div class="music">
+            <div class="music_bar"></div>
+            <div class="music_bar"></div>
+            <div class="music_bar"></div>
+            <div class="music_bar"></div>
+        </div>
+    </div>
+    <div class="page page_load">
+        <span>0%</span>
+        <div class="progress">
+            <div class="pro"></div>
+        </div>
+        <img src="images/loading_car.png" class="loading_car">
+        <p>“为了最佳体验，请锁定屏幕”</p>
+    </div>
+    <div class="page page_index none">
+        <img src="" data-src="images/bt.png" class="bt none">
+        <img src="" data-src="images/car.png" class="car infinite tada">
+        <img src="" data-src="images/zw.png" class="zw none" id="zw">
+        <img src="" data-src="images/ca.png" class="ca none">
+        <canvas id="animation_canvas"></canvas>
+    </div>
+    <div class="page page_hj none">
+        <img src="" data-src="images/clock.png" class="clock none">
+        <div class="hj">
+            <img src="" data-src="images/hj.png" class="jl">
+            <!--<div class="circle" data-id="1"></div>
+            <div class="circle" data-id="2"></div>
+            <div class="circle" data-id="3"></div>
+            <div class="circle" data-id="4"></div>
+            <div class="circle" data-id="5"></div>
+            <div class="circle" data-id="6"></div>
+            <div class="circle" data-id="7"></div>
+            <div class="circle" data-id="8"></div>
+            <div class="circle" data-id="9"></div>
+            <div class="circle" data-id="10"></div>
+            <div class="circle" data-id="11"></div>
+            <div class="circle" data-id="12"></div>
+            <div class="circle" data-id="13"></div>
+            <div class="circle" data-id="14"></div>-->
+            <div class="circle" data-id="15"></div>
+            <img src="" data-src="images/tipwa.png" class="tipwa none">
+            <img src="" data-src="images/tiphand.png" class="tiphand none">
+        </div>
+        <canvas id="line"></canvas>
+        <img src="" data-src="images/jz.png" class="jz">
+    </div>
+    <div class="page page_sp none">
+		<a href="javascript:;" class="tg stop">跳过</a>
+    	<video src="images/ljcy.mp4" preload="preload" id="ljcy" webkit-playsinline="" playsinline="" x5-video-player-type="h5" style="position: absolute; background: rgb(0, 0, 0); left: 0px; top: 0; width:100%; height: 100%; visibility: visible;"></video>
+       
+    </div>
+    <div class="page page_dh none">
+	    	<div class="menu zj">
+	    		<img src="" data-src="images/2016zj.png" class="left">
+	    		<img src="" data-src="images/right.png" class="right">
+	    	</div>
+				<div class="menu ap">
+	    		<img src="" data-src="images/2017ap.png" class="left">
+	    			    		<img src="" data-src="images/right.png" class="right">
+
+	    	</div>
+	    	<div class="menu dr">
+	    		<img src="" data-src="images/zjdr.png" class="left">
+	    			    		<img src="" data-src="images/right.png" class="right">
+
+	    	</div>
+	    	<div class="menu gs">
+	    		<img src="" data-src="images/jggs.png" class="left">
+	    			    		<img src="" data-src="images/right.png" class="right">
+
+	    	</div>
+    </div>
+    <div class="page page_zj none">
+    	<img src="" data-src="images/2016hg.png" class="zj_bt"/>
+    	<div class="slick single-item">
+        <div class=""><img src="" data-src="images/2016tp01.jpg" class="hd_img"/></div>
+                    <div class=""><img src="" data-src="images/2016tp02.jpg" class="hd_img"/></div>
+                    <div class=""><img src="" data-src="images/2016tp03.jpg" class="hd_img"/></div>
+                    <div class=""><img src="" data-src="images/2016tp04.jpg" class="hd_img"/></div>
+                    <div class=""><img src="" data-src="images/2016tp05.jpg" class="hd_img"/></div>
+                    <div class=""><img src="" data-src="images/2016tp06.jpg" class="hd_img"/></div>
+      </div>
+      <img src="" data-src="images/left.png" class="back"/>
+	    <div class="zj_wa" id="zj_wa">
+	    	<img src="" data-src="images/zj_nr.png">
+	    </div>
+    </div>
+    <div class="page page_ap none">
+    	<img src="" data-src="images/2017wz.png" class="ap_bt"/>
+    	<img src="" data-src="images/2017car.png" class="ap_car"/>
+      <img src="" data-src="images/left.png" class="back"/>
+	    <div class="ap_wa" id="ap_wa">
+	    	<img src="" data-src="images/ap_nr.png">
+	    </div>
+    </div>
+    <div class="page page_dr none">
+    	<img src="" data-src="images/zj_car.png" class="dr_car none"/>
+    	<img src="" data-src="images/zm_bl.png" class="dr_bl none"/>
+      <img src="" data-src="images/left.png" class="back"/>
+      <img src="" data-src="images/zj_wa.png" class="dr_bt"/>
+	    <div class="form">
+	    	<form>
+	    		
+	    	<img src="" data-src="images/zm_xxtx.png" class="form_bt" />
+	    	<img src="" data-src="images/zm_xm.png" class="form_xm" />
+	    	<img src="" data-src="images/zm_dh.png" class="form_dh" />
+	    	<input type="text" class="xm" id="dr_xm"/>
+	    	<input type="text" class="dh" id="dr_dh"/>
+	    	<img src="" data-src="images/sub.png" class="sub" id="dr_sub">
+	    	<img src="" data-src="images/zm_nan.png" class="form_nan" />
+	    	<img src="" data-src="images/zm_nv.png" class="form_nv" />
+	    	<span class="dr_check active" data-id="1"></span>
+	    	<span class="dr_check" data-id="2"></span>
+	    	</form>
+	    </div>
+    </div>
+    <div class="page page_gs none">
+    	<div class="gs_lsj">
+    		<img src="" data-src="images/lsj.png" class="lsj"/>
+    		<img src="" data-src="images/zgzl.png" class="gs_zgzl"/>
+    	</div>
+    	
+      <img src="" data-src="images/left.png" class="back"/>
+      <img src="" data-src="images/xq.png" class="gs_bt"/>
+	    <div class="form">
+	    	<form>
+	    	<img src="" data-src="images/zm_xxtx.png" class="form_bt" />
+	    	<img src="" data-src="images/zm_xm.png" class="form_xm" />
+	    	<img src="" data-src="images/zm_dh.png" class="form_dh" />
+	    	<input type="text" class="xm" id="gs_xm"/>
+	    	<input type="text" class="dh" id="gs_dh"/>
+	    	<img src="" data-src="images/sub.png" class="sub" id="gs_sub">
+	    	<img src="" data-src="images/zm_nan.png" class="form_nan" />
+	    	<img src="" data-src="images/zm_nv.png" class="form_nv" />
+	    	<span class="gs_check active" data-id="1"></span>
+	    	<span class="gs_check" data-id="2"></span>
+	    	</form>
+	    </div>
+    </div>
+    <div class="page_tip none"> 
+    	<img src="" data-src="images/tjcg.png" class="tip_img tjcg none"/>
+    	<img src="" data-src="images/tjsb.png" class="tip_img tjsb none"/>
+		<div class="tip_xq zm none">
+			<div class="hdzm">
+				<img src="" data-src="images/zmtc.png" />
+			</div>
+		</div>
+		<div class="tip_xq zjtc none">
+			<div class="hdgs">
+				<img src="" data-src="images/zjtc.png" />
+			</div>
+		</div>
+    	<img src="" data-src="images/close.png" class="close"/>
+    </div>
+
+</body>
+</html>

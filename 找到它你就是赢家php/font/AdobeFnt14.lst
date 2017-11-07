@@ -1,0 +1,43 @@
+%!Adobe-FontList 1.14
+%Locale:0x804
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\wamp\wamp\www\wxh5\findTa\Font\century-gothic.eot
+FileModTime:1471596972
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\wamp\wamp\www\wxh5\findTa\Font\century-gothic.svg
+FileModTime:1471596972
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:CenturyGothic
+FamilyName:Century Gothic
+StyleName:Regular
+FullName:Century Gothic
+MenuName:Century Gothic
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\wamp\wamp\www\wxh5\findTa\Font\century-gothic.ttf
+DataFormat:sfntData
+FileLength:112628
+FileModTime:1471596972
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\wamp\wamp\www\wxh5\findTa\Font\century-gothic.woff
+FileModTime:1471596972
+%EndFont
+

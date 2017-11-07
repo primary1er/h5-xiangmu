@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>骑逢对手</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <div class="musicBox">
+    	<img class="musicStartBtn" src="images/musicStartBtn.png" width="100%">
+    	<img class="musicCloseBtn" src="images/musicCloseBtn.png" width="100%">
+        <audio id="Jaudio" src="rongyu.mp3" preload autoplay="autoplay" loop></audio>
+    </div>
+    <div class="page page_help">
+        <div class="logo"><img src="images/logo.png" width="100%"></div>
+        <div class="posDiv bg"><img src="images/page_help_bg.png" width="100%"></div>
+        <div class="cloudBox">
+            <img class="cloud01" src="images/page_upload_cloud01.png" width="100%">
+            <img class="cloud02" src="images/page_upload_cloud02.png" width="100%">
+            <img class="cloud03" src="images/page_upload_cloud03.png" width="100%">
+        </div>
+        <div class="conBox">
+            <img src="images/page_help_con.png" width="100%">
+            <!--头像Begin-->
+            <div class="txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+            <!--头像End-->
+            <div class="inBox">
+            	<div class="nrBox">
+                    <div class="nr-in nr-01">飞的猪才怪～</div>
+                    <div class="nr-in nr-02">23.6</div>
+                    <div class="nr-in nr-03">骑行距离（km）</div>
+                    <div class="nr-in nr-04" id="x_wri"></div>
+                    <div class="nr-in nr-05 clearfix">
+                    	<div class="nr-05-l">
+                        	<div><img src="images/page_help_nr05_l.png" width="18.63%"><span id="x_num01"></span></div>
+                        	<div>节约碳排量(g)</div>
+                        </div>
+                        <div class="nr-05-r">
+                        	<div><img src="images/page_help_nr05_r.png" width="18.63%"><span id="x_num02"></span></div>
+                        	<div>卡路里(kCal)</div>
+                        </div>
+                    </div>
+                    <div class="nr-in nr-06"><img src="images/page_help_code.png" width="100%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="btnBox">
+        	<!--为ta助力-->
+        	<div class="btn-01">
+                <span class="btn-01-j">+0.2km</span>
+                <img src="images/page_help_btn01.png" width="100%" id="btn-zl">
+            </div>
+            <div class="btn-warp">
+                <!--我也要晒-->
+            	<div class="btn-02">
+                	<img src="images/page_help_btn02.png" width="100%">
+                </div>
+                <!--排行榜-->
+            	<div class="btn-03">
+                	<img src="images/page_help_btn03.png" width="100%" id="phbBtn">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pup_warp_black"></div>
+    <!--排行榜弹窗-->
+    <div class="phb_pup_in">
+        <img src="images/page_phb_pup.png" width="100%">
+        <div class="phb_pup_info">
+			<ul>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <span><img src="images/phb_pup_li_01.png" width="100%"></span>
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <span><img src="images/phb_pup_li_02.png" width="100%"></span>
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <span><img src="images/phb_pup_li_03.png" width="100%"></span>
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="imgBox">
+                        <img src="images/page_phb_pup_txk.png" width="100%">
+                        <div class="in_txBox"><img src="images/page_help_tx.jpg" width="100%"></div>
+                    </div>
+                	<div class="wriBox">
+                    	<div class="w-01">飞的猪才怪～</div>
+                        <div class="w-02">Ta一口气骑行了<span>32.8km</span>距离</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <img class="phb_closeBtn" src="images/page_index_pup_close.png" width="100%" id="phb_closeBtn">
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/help.js"></script>

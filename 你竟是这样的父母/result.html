@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>你竟是这样的父母</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(e) {
+		var timer = null;
+		timer = setTimeout(function(){
+			$(".resultPage .tsBox img").addClass("hover");
+			timer02 = setTimeout(function(){
+				$(".resultPage .tsBox").fadeOut(500);
+			},3000);
+		},500);
+		$("#shareBtnBox").click(function(){
+			$(".pup_warp,.pup_info").fadeIn();	
+		});
+		$("#shareCloseBtn").click(function(){
+			$(".pup_warp,.pup_info").fadeOut();	
+		});
+    });
+    </script>
+</head>
+<body>
+    <div class="musicBox">
+        <audio id="Jaudio" src="musicBg.mp3" preload autoplay="autoplay" loop></audio>
+    </div>
+    <div class="resultPage">
+        <div>
+            <!--这是后台生成的图片，用户长按可保存-->
+            <img src="images/result_img.jpg" width="100%">
+        </div>
+        <div class="tsBox"><img src="images/result_s.png" width="100%"></div>
+        <div class="btnBox"><img src="images/share_btn.png" width="100%" id="shareBtnBox"></div>
+    </div>
+    <div class="pup_warp"></div>
+    <div class="pup_info">
+    	<div><img src="images/pup_share.png" width="100%"></div>
+        <span><img src="images/pup_close.png" width="100%" id="shareCloseBtn"></span>
+    </div>
+</body>
+</html>

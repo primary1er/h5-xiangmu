@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* CSS Document */
+body,span,div,ul,li,ol,dl,dt,dd,a,img,input,textarea,h1,h2,h3,h4,h5,h6,p,form,em,b,u,i{ padding:0px; margin:0px; border:0px; list-style:none;}
+body{ overflow-x:hidden; font-size:14px; color:#ccc; font-family:bannerFont,"Microsoft YaHei",'微软雅黑',Arial;}
+input,textarea,button,select{ font-size:13px; font-family:bannerFont,"Microsoft YaHei",'微软雅黑',Arial; outline:none;}
+img{ vertical-align:middle;}
+i,em{ font-style:normal;}
+a{ bblr:expression(this.onFocus=this.blur()); outline-style:none;}
+a:visited,a:link{ text-decoration:none;}
+a:hover{ color:#fff; text-decoration:none;}
+a:active{}
+
+input[type="submit"],input[type="reset"],input[type="button"]{ -webkit-appearance:none;}
+/*ios系统中元素被触摸时产生的半透明灰色遮罩去掉*/
+a,span,button,input,textarea{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    /*-webkit-user-modify:read-write-plaintext-only; */
+}
+/*input type=number*/
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{ -webkit-appearance:none !important;}/* chrome and safari */
+
+/*定义字体*/
+@font-face {
+	font-family: 'bannerFont';
+	src: url('../font/century-gothic.eot'); /* IE9 Compat Modes */
+	src: url('../font/century-gothic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../font/century-gothic.woff') format('woff'), /* Modern Browsers */
+		 url('../font/century-gothic.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../font/century-gothic.svg#../font/century-gothic') format('svg'); /* Legacy iOS */
+}
+
+.clearfix:after{ content:""; display:block; clear:both;}
+.clearfix{ zoom:1;}
+.fl{ float:left;}
+.fr{ float:right;}
+.none{display: none;}
+html,body,.page{width: 100%;height:100%;margin:0;padding:0;}
+/*begin*/
+body{background:url('../images/bg.jpg');background-size:100% 100%; }
+.page{;position: relative;}
+.page img{position: absolute;}
+.logo{width:21.86%;height:4.73%;right:10%;top:5.47%;}
+
+/*.page_index{background:url('../images/index_bg.png');background-size:100% 100%;}*/
+.index1{width: 100%;height:7.8%;top:4.9%;left:0;}
+.index2{width: 100%;height:18.24%;top:11.9%;left:0;}
+.index3{width: 100%;height:10%;top:31%;left:0;}
+.index4{width: 100%;height:9.53%;top:65.5%;left:0;}
+.index5{width: 100%;height:2.32%;top:77%;left:0;}
+.page_index .jiantou{
+	width:55.2%;
+	height:5.64%;
+	position: absolute;
+	left:22.4%;
+	bottom:10%;
+	background: url(../images/jiantou.png) 0 bottom repeat-x;
+	-webkit-animation: animate-cloud 40s linearinfinite;
+	-moz-animation: animate-cloud 20s linear infinite;
+	-ms-animation: animate-cloud 20s linear infinite;
+	-o-animation: animate-cloud 20s linear infinite;
+	animation: animate-cloud 40s linear infinite;
+	background-size:auto 100%;
+}
+.page_index .left{
+	position: absolute;
+	width:26%;
+	height:5.64%;
+	left:0;
+	bottom:10%;
+	background: url(../images/left.png);
+	background-size:100% 100%;
+}
+.page_index .right{
+	position: absolute;
+	width:26.53%;
+	height:5.64%;
+	right:0;
+	bottom:10%;
+	background: url(../images/right.png);
+	background-size:100% 100%;
+}
+@-webkit-keyframes animate-cloud {
+
+	from {
+
+		background-position: 0 100%;
+
+	}
+
+	to {
+
+		background-position: 777px 100%;
+
+	}
+
+}
+@-moz-keyframes animate-cloud {
+
+	from {
+
+		background-position: 0 100%;
+
+	}
+
+	to {
+
+		background-position: 777px 100%;
+
+	}
+
+}
+
+@-ms-keyframes animate-cloud {
+
+	from {
+
+		background-position: 0px 100%;
+
+	}
+
+	to {
+
+		background-position: 777px 100%;
+
+	}
+
+}
+
+@-o-keyframes animate-cloud {
+
+	from {
+
+		background-position: 0px 100%;
+
+	}
+
+	to {
+
+		background-position: 777px 100%;
+
+	}
+
+}
+
+.tags{position:absolute;width:80%;height:26.53%;top:45.6%;left:10%;}
+.tags span{color:#00aaff;position: absolute;font-size: 22px;display: none;}
+.tags span:nth-child(1){left:15%;top:-5%;}
+.tags span:nth-child(2){left:20%;top:14%;}
+.tags span:nth-child(3){right:25%;top:34%;}
+.tags span:nth-child(4){right:2%;top:12%;}
+.tags span:nth-child(5){right:21%;top:0;}
+.tags span:nth-child(6){left:2%;top:26%;}
+.tags span:nth-child(7){left:13%;top:65%;}
+.tags span:nth-child(8){right:16%;top:24%;}
+.tags span:nth-child(9){left:50%;top:67%;}
+.tags span:nth-child(10){left:37%;bottom:3%;}
+.tags span:nth-child(11){left:25%;top:43%;}
+@-webkit-keyframes flash{
+	0%{-webkit-transform:scale(1);transform:scale(1);opacity:0.3}
+	50%{-webkit-transform:scale(1.1);transform:scale(1.1);opacity:0.8}
+	100%{-webkit-transform:scale(1);transform:scale(1);opacity:0.2}
+}
+@keyframes flash{
+	0%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);opacity:0.3}
+	50%{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1);opacity:0.8}
+	100%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);opacity:0.2}
+}
+.flash{-webkit-animation-duration:4s;animation-duration:4s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:flash;animation-name:flash;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}
+
+/*.page_reg{background: url('../images/reg_bg.png');background-size: 100% 100%;}*/
+.reg{width: 32%;height:10%;bottom:7.1%;left:35%;}
+.reg1{width: 100%;height:7.8%;top:3.9%;left:0;}
+.reg2{width: 100%;height:18.57%;top:11.9%;left:0;}
+.reg3{width: 100%;height:10.61%;top:33%;left:0;}
+.reg4{width: 100%;height:100%;top:0;left:0;}
+.page_reg input{width: 37.33%;height:4.5%;position: absolute;left:34.67%;background:transparent;border:none;outline: none;color:black;font-size:30px;}
+#name{bottom:36.48%;}
+#phone{bottom:29.02%;}
+
+.page_txz .txz{width:70.133%;height:73%;top:2.31%;left:16%; }
+.page_txz .save,.page_txz .href{width:30.67%;height:10.78%;top:83.38%; }
+.page_txz .save{left:14.67%;}
+.page_txz .href{right:14.67%;}
+.txz_wa{width: 100%;height:8.28%;left:0;top:74.76%;}
+
+.animated{-webkit-animation-duration:0.5s;animation-duration:0.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+@-webkit-keyframes slideInDown{
+	0%{opacity:0;-webkit-transform:translateY(-50px);transform:translateY(-50px)}
+	100%{-webkit-transform:translateY(0);transform:translateY(0)}
+}
+@keyframes slideInDown{
+	0%{opacity:0;-webkit-transform:translateY(-50px);-ms-transform:translateY(-50px);transform:translateY(-50px)}
+	100%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
+}
+.slideInDown{-webkit-animation-name:slideInDown;animation-name:slideInDown}

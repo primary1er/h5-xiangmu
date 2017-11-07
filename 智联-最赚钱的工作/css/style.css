@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{-webkit-text-size-adjust:100%; font-size:100%; outline:none; font-family:"Microsoft YaHei"; margin:0; padding:0;}
+body{ -webkit-tap-highlight-color:rgba(0,0,0,0); overflow:hidden; background:#000;}/*去掉点击链接出现蓝色焦点框的问题 禁用这个高亮的方式 */
+input,textarea,select{ font-size:100%;}
+ul{ list-style:none; overflow:hidden;}
+a{ font-size:16px; outline:none; text-decoration:none;}  
+img{ vertical-align:top; border:none;}
+
+
+
+
+.wrapBox{width:750px; margin:0 auto; display:none;}
+
+
+.musicBtn{display:block; width:64px; height:58px; background:url(../images/music_img.png) no-repeat left top; position:absolute; right:30px; top:40px;  text-indent:-9999px; z-index:2;}
+
+.logo{ width:156px; position:absolute; left:38px; top:46px;  z-index:2;}
+#bg_music{ position:absolute; left:0; top:0; opacity:0;}
+
+.loading{ width:750px; position:absolute; left:50%; top:0; margin-left:-375px;}
+.loading .load{ width:316px; height:5px; background:#5c5c5a; position:absolute; left:218px; top:539px; }
+.loading .load p{ width:0; height:100%; background:#dadad9;}
+.loading h1{ width:100%; font-weight:normal; font-size:24px; color:#8c8c8b; position:absolute; left:0; top:560px; text-align:center;}
+
+/*首页*/
+.section{ position:relative; width:100%; overflow:hidden;}
+
+/*section1*/
+.slogan{ width:578px; height:329px; position:absolute; left:93px; opacity:0; top:115px; animation-delay:.3s; -webkit-animation-delay:.3s;}
+.slogan img,.jiemi_btn img{ position:absolute; left:0; top:0;}
+.slogan_1,.jiemi_btn1{ -webkit-animation: shine .4s ease infinite; animation: shine .4s ease infinite;}
+.slogan_2,.jiemi_btn2{ -webkit-animation: shine .4s .6s ease infinite; animation: shine .4s .6s ease infinite;}
+
+.img1_1{ width:92px; padding-bottom:108px; background:url(../images/img_1_1.png) no-repeat left bottom; position:absolute; left:529px; top:340px; opacity:0; }
+.img1_2{ width:100%; position:absolute; left:0; bottom:0; opacity:0; animation-delay:1s; -webkit-animation-delay:1s;}
+.img1_3{ width:330px; position:absolute; left:0; top:376px; opacity:0; animation-delay:1.5s; -webkit-animation-delay:1.5s;}
+
+.jiemi_btn{ width:170px; position:absolute; left:310px; opacity:0; top:970px; animation-delay:2s; -webkit-animation-delay:2s;}
+.hand_btn{ width:112px; position:absolute; left:380px; opacity:0; top:990px; animation-delay:2.5s; -webkit-animation-delay:2.5s;}
+.active .hand_btn img{ -webkit-animation: scale .4s 2.5s ease 3; animation: scale .4s 2.5s ease 3;}
+
+.money{ width:100%; height:100%; position:absolute; left:0; top:0; background-image:url(../images/money.png); animation: money 1.5s steps(9) 1; -webkit-animation: money 1.5s steps(9) 1; display:none;  z-index:3;}
+
+
+/*section2*/
+.tit_2{ width:100%; position:absolute; left:0; top:0; animation-delay:.3s; -webkit-animation-delay:.3s; transform-origin:center top; -webkit-transform-origin:center top; -webkit-transform: translate3d(0,-100%,0); transform: translate3d(0,-100%,0); z-index:2;}
+.img_2_1{ width:100%; position:absolute; left:0; top:600px; animation-delay:1s; -webkit-animation-delay:1s; -webkit-transform: translate3d(0,-205%,0); transform: translate3d(0,-205%,0);}
+.img_2_2{ width:262px; position:absolute; left:216px; top:452px; animation-delay:1.7s; -webkit-animation-delay:1.7s; -webkit-transform: translate3d(0,-200%,0); transform: translate3d(0,-200%,0);}
+.arrow{ width:81px; position:absolute; left:330px; bottom:7%; -webkit-animation: arrow 1.2s 2.4s ease infinite; animation: arrow 1.2s 2.4s ease infinite; opacity:0;}
+.arrow1{ animation-delay:4.5s; -webkit-animation-delay:4.5s;}
+
+
+/*section3*/
+.img_3_1{ width:100%; position:absolute; left:0; top:348px; opacity:0; -webkit-animation-delay:1s; animation-delay:1s;}
+.img_3_2{ width:1469px; position:absolute; left:0; top:825px; -webkit-animation-delay:1.2s; animation-delay:1.2s; -webkit-transform:translate3d(100%,0,0); transform:translate3d(100%,0,0);}
+.img_3_3{ width:100%; position:absolute; left:0; top:803px; opacity:0; -webkit-animation-delay:3s; animation-delay:3s;}
+.getBtn,.getBtn1,.getBtn2{ width:228px; height:108px; position:absolute; left:410px; top:640px; -webkit-animation: btn_shine .5s 2s linear infinite; animation: btn_shine .5s 2s linear infinite; -webkit-animation-delay:3s; animation-delay:3s; opacity:0;}
+.getBtn img,.getBtn1 img,.getBtn2 img{ -webkit-animation: btn_shine .5s ease infinite; animation: btn_shine .5s ease infinite;}
+	
+	
+/*section4*/
+.img_4_1{ width:100%; position:absolute; left:0; bottom:0; opacity:0; -webkit-animation-delay:1s; animation-delay: 1s;}
+.img_4_1_2{ width:100%; height:35px; position:absolute; left:0; bottom:761px; background-image:url(../images/img_4_1_2.png); opacity:0;}
+.active .finger{  animation: finger .6s 1.8s steps(2) 2 forwards; -webkit-animation: finger .6s 1.8s steps(2) 2 forwards; }
+.fly_img{ width:420px; position:absolute; right:0; top:163px; -webkit-transform: translate3d(100%,100%,0); transform: translate3d(100%,100%,0); z-index:4;}
+.arrow2{ animation-delay:2s; -webkit-animation-delay:2s;}
+
+/*section5*/
+.img_5_1{ width:100%; position:absolute; left:0; top:402px; opacity:0; -webkit-animation-delay:1s; animation-delay: 1s;}
+.img_5_2{ width:100%; position:absolute; left:0; bottom:0; opacity:0; -webkit-animation-delay:1.5s; animation-delay: 1.5s;}
+.img_5_2 img{ -webkit-animation: huanhu .8s 2s linear infinite; animation: huanhu .8s 2s linear infinite;}
+.getBtn1{ -webkit-animation-delay:2s; animation-delay:2s; left:518px; top:420px;}
+
+
+/*section6*/
+.img_6_1{ width:610px; position:absolute; left:0; bottom:0; opacity: 0; -webkit-animation-delay:1s; animation-delay:1s;}
+.img_6_2{ width:100%; position:absolute; left:0; bottom:0; opacity: 0; -webkit-animation-delay:1s; animation-delay:1s;}
+.p_finger{ width:53px; height:70px; position:absolute; left:0; top:0; background-image:url(../images/img_6_finger.png); animation: p_finger .8s steps(2) infinite; -webkit-animation: p_finger .8s steps(2) infinite;}
+
+
+/*section7*/
+.hand_7{ width:120px; height:163px; position:absolute; left:371px; top:609px; background-image:url(../images/hand_7.png); opacity:0;}
+.active .hand{  animation: hand_7 .5s .6s steps(2) infinite; -webkit-animation: hand_7 .5s .6s steps(2) infinite;}
+.getBtn2{ -webkit-animation-delay:1.2s; animation-delay:1.2s; left:397px; top:525px;}
+.jinbi{ width:158px; position:absolute; left:430px; top:520px; transform:scale(.2); -webkit-transform:scale(.2); -webkit-animation: jinbi .5s 1.5s ease-in infinite; animation:jinbi .5s 1.5s ease-in infinite;}
+
+/*section8*/
+.img_8_1{ position:absolute; left:0; top:178px; opacity:0; -webkit-animation-delay:1s; animation-delay: 1s;}
+.jiqiren_img{ width:195px; height:219px; position:absolute; left:262px; top:508px; background-image:url(../images/jiqiren_img.png); animation: jiqiren_img .6s steps(2) infinite; -webkit-animation: jiqiren_img .6s steps(2) infinite;}
+
+
+/*section9*/
+.img_9_1{ width:100%; height:595px; position:absolute; left:0; top:506px; background:url(../images/img_9_1.png) no-repeat left top; -webkit-animation-delay:1.2s; animation-delay: 1.2s; opacity:0;}
+.img_9_1 .aliveBtn{ display:block; width:215px; height:72px; margin:15px auto 39px;}
+.img_9_1 p{ margin-left:260px; height:106px;}
+.img_9_1 p input{ width:390px; height:70px; font-size:28px; color:#333333; background:none; border:none;}
+.img_9_1 .signBtn{ display:block; width:595px; height:105px; margin:0 auto; text-indent:-9999px;}
+
+
+.tc_alive{ width:608px; height:932px; background:url(../images/tc_alive.png) no-repeat left top; position:fixed; left:50%; top:50%; margin:-466px 0 0 -304px; display:none; z-index:10;}
+.tc_alive a{ display:block; width:68px; height:58px; position:absolute; left:267px; bottom:0;}
+
+.bg{ width:100%; height:100%; background:#000; opacity:0.7; position:fixed; left:0; top:0; display:none; z-index:9;}
+
+/*shine*/
+@-webkit-keyframes rotate{
+     0%{-webkit-transform:rotate(0deg); }
+	 100% {-webkit-transform:rotate(360deg);}
+}
+@keyframes rotate{
+     0%{transform:rotate(0deg); }
+	 100% {transform:rotate(360deg);}
+}

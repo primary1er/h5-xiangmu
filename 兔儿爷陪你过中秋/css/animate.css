@@ -1,0 +1,175 @@
+.animated{-webkit-animation-duration:0.5s;animation-duration:0.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.animatedslow{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.animatedss{-webkit-animation-duration:10s;animation-duration:10s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+.animated.infinite,.animatedslow.infinite,.animatedss.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}
+/*淡入*/
+@-webkit-keyframes slideInDown{
+    0%{opacity:0;-webkit-transform:translateY(30px);transform:translateY(30px)}
+    100%{-webkit-transform:translateY(0);transform:translateY(0)}
+}
+@keyframes slideInDown{
+    0%{opacity:0;-webkit-transform:translateY(30px);-ms-transform:translateY(30px);transform:translateY(30px)}
+    100%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
+}
+.slideInDown{-webkit-animation-name:slideInDown;animation-name:slideInDown}
+
+/*跳动*/
+@-webkit-keyframes updown{
+    0%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}
+    50%{-webkit-transform:translateY(10px);transform:translateY(10px)}
+    100%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}
+}
+@keyframes updown{
+    0%{-webkit-transform:translateY(-10px);-ms-transform:translateY(-10px);transform:translateY(-10px)}
+    50%{-webkit-transform:translateY(10px);-ms-transform:translateY(10px);transform:translateY(10px)}
+    100%{-webkit-transform:translateY(-10px);-ms-transform:translateY(-10px);transform:translateY(-10px)}
+}
+.updown{-webkit-animation-name:updown;animation-name:updown}
+
+/*摆动*/
+@-webkit-keyframes leftright{
+    0%{-webkit-transform:translateX(-20px);transform:translateX(-20px)}
+    50%{-webkit-transform:translateX(20px);transform:translateX(20px)}
+    100%{-webkit-transform:translateX(-20px);transform:translateX(-20px)}
+}
+@keyframes leftright{
+    0%{-webkit-transform:translateX(-20px);-ms-transform:translateX(-20px);transform:translateX(-20px)}
+    50%{-webkit-transform:translateX(20px);-ms-transform:translateX(20px);transform:translateX(20px)}
+    100%{-webkit-transform:translateX(-20px);-ms-transform:translateX(-20px);transform:translateX(-20px)}
+}
+.leftright{-webkit-animation-name:leftright;animation-name:leftright; }
+
+/*飘动*/
+@-webkit-keyframes rightleft{
+    0%{-webkit-transform:translateX(877px);transform:translateX(877px)}
+    100%{-webkit-transform:translateX(-127px);transform:translateX(-127px)}
+}
+@keyframes rightleft{
+    0%{-webkit-transform:translateX(877px);-ms-transform:translateX(877px);transform:translateX(877px)}
+    100%{-webkit-transform:translateX(-127px);-ms-transform:translateX(-127px);transform:translateX(-127px)}
+}
+.rightleft{animation: rightleft 8s linear 0s infinite;
+    -webkit-animation: rightleft 8s linear 0s infinite;}
+
+/*飘动*/
+@-webkit-keyframes rightleft1{
+    0%{-webkit-transform:translateX(940px);transform:translateX(940px)}
+    100%{-webkit-transform:translateX(-96px);transform:translateX(-96px)}
+}
+@keyframes rightleft1{
+    0%{-webkit-transform:translateX(940px);-ms-transform:translateX(940px);transform:translateX(940px)}
+    100%{-webkit-transform:translateX(-96px);-ms-transform:translateX(-96px);transform:translateX(-96px)}
+}
+.rightleft1{animation: rightleft1 12s linear 0s infinite;
+    -webkit-animation: rightleft1 12s linear 0s infinite;}
+
+
+/*飘动*/
+@-webkit-keyframes rightleft2{
+    0%{-webkit-transform:translateX(870px);transform:translateX(870px)}
+    100%{-webkit-transform:translateX(-119px);transform:translateX(-119px)}
+}
+@keyframes rightleft2{
+    0%{-webkit-transform:translateX(870px);-ms-transform:translateX(870px);transform:translateX(870px)}
+    100%{-webkit-transform:translateX(-119px);-ms-transform:translateX(-119px);transform:translateX(-119px)}
+}
+.rightleft2{animation: rightleft2 6s linear 0s infinite;
+    -webkit-animation: rightleft2 6s linear 0s infinite;}
+
+
+/*音乐动画*/
+@-webkit-keyframes waves {
+    10% {
+        height: 5%;
+    }
+    20% {
+        height: 30%;
+    }
+    40% {
+        height: 20%;
+    }
+    50% {
+        height: 50%;
+    }
+    100% {
+        height: 20%;
+    }
+}
+
+@keyframes waves {
+    10% {
+        height: 8%;
+    }
+    20% {
+        height: 14%;
+    }
+    40% {
+        height: 20%;
+    }
+    50% {
+        height: 55%;
+    }
+    100% {
+        height: 30%;
+    }
+}
+.music_bar:nth-child(1) {
+    bottom:0;
+    left:0;
+    animation: waves 1.2s linear 0s infinite alternate;
+    -webkit-animation: waves 1.2s linear 0s infinite alternate;
+}
+
+.music_bar:nth-child(2) {
+    bottom:0;
+    left:28.56%;
+    animation: waves 0.9s linear 0s infinite alternate;
+    -webkit-animation: waves 0.9s linear 0s infinite alternate;
+}
+.music_bar:nth-child(3) {
+    bottom:0;
+    left:57.12%;
+    animation: waves 1.8s linear 0s infinite alternate;
+    -webkit-animation: waves 1.8s linear 0s infinite alternate;
+}
+.music_bar:nth-child(4) {
+    bottom:0;
+    left:85.68%;
+    animation: waves 1.5s linear 0s infinite alternate;
+    -webkit-animation: waves 1.5s linear 0s infinite alternate;
+}
+.music_bar.plus{
+    animation-play-state:paused;
+    -webkit-animation-play-state:paused; /* Safari 和 Chrome */
+}
+
+.fadeIn{
+	 animation-duration:.5s;
+	 animation-timing-function:ease-out;
+	 animation-iteration-count:1;
+	 animation-fill-mode:forwards;
+	 -webkit-animation-duration:.5s;
+	 -webkit-animation-timing-function:ease-out;
+	 -webkit-animation-iteration-count:1;
+	 -webkit-animation-fill-mode:forwards;
+}
+
+
+
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1;	}
+}
+.swiper-slide-active.page_rabbit .fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+
+
+

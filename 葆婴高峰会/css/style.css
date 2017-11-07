@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* CSS Document */
+body,span,div,ul,li,ol,dl,dt,dd,a,img,input,textarea,h1,h2,h3,h4,h5,h6,p,form,em,b,u,i{ padding:0px; margin:0px; border:0px; list-style:none;}
+body{ overflow-x:hidden; font-size:14px; color:#ccc; font-family:bannerFont,"Microsoft YaHei",'微软雅黑',Arial; background:#e4e4e4;}
+input,textarea,button,select{ font-size:13px; font-family:bannerFont,"Microsoft YaHei",'微软雅黑',Arial; outline:none;}
+img{ vertical-align:middle;}
+i,em{ font-style:normal;}
+a{ bblr:expression(this.onFocus=this.blur()); outline-style:none;}
+a:visited,a:link{ text-decoration:none;}
+a:hover{ color:#fff; text-decoration:none;}
+a:active{}
+
+input[type="submit"],input[type="reset"],input[type="button"]{ -webkit-appearance:none;}
+/*ios系统中元素被触摸时产生的半透明灰色遮罩去掉*/
+a,span,button,input,textarea{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    /*-webkit-user-modify:read-write-plaintext-only; */
+}
+/*input type=number*/
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{ -webkit-appearance:none !important;}/* chrome and safari */
+
+/*定义字体*/
+@font-face {
+	font-family: 'bannerFont';
+	src: url('../font/century-gothic.eot'); /* IE9 Compat Modes */
+	src: url('../font/century-gothic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../font/century-gothic.woff') format('woff'), /* Modern Browsers */
+		 url('../font/century-gothic.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../font/century-gothic.svg#../font/century-gothic') format('svg'); /* Legacy iOS */
+}
+
+.clearfix:after{ content:""; display:block; clear:both;}
+.clearfix{ zoom:1;}
+.fl{ float:left;}
+.fr{ float:right;}
+.none{display: none;}
+html,body,.page{width: 100%;height:100%;margin:0;padding:0;overflow: hidden;}
+/*begin*/
+
+.page{position: absolute;top:0;left:0;}
+.page img{position: absolute;}
+
+.logo{width:100%;height:55px;position: absolute;top:55px;left:0;z-index: 10;}
+.logo .llogo{width:40%;height:100%;margin-left: 6.67%;}
+.logo .music{width: 5.6%;height:100%;float:right;margin-right:6.67%;position: relative;}
+.logo .music .music_bar{position: absolute;}
+.logo .music div{
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#369eda,endColorStr=#6444a5); /*IE 6 7 8*/
+	background: -ms-linear-gradient(top, #369eda,  #6444a5);        /* IE 10 */
+	background:-moz-linear-gradient(top,#369eda,#6444a5);/*火狐*/
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#369eda), to(#6444a5));/*谷歌*/
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#369eda), to(#6444a5));      /* Safari 4-5, Chrome 1-9*/
+	background: -webkit-linear-gradient(top, #369eda, #6444a5);   /*Safari5.1 Chrome 10+*/
+	background: -o-linear-gradient(top, #369eda, #6444a5);  /*Opera 11.10+*/
+	width:10%;height:70%;float: left;margin:0;padding:0;
+}
+
+.page_index{background: url("../images/index_bg.png") #fff;background-size:750px 100%;}
+.index_main{width: 100%;top:180px;left:0;}
+.index_title{width: 100%;top:734px;left:0;}
+.index_3y{width: 100%;top:1010px;left:0;}
+.next{width: 110px;bottom:55px;left:320px;}
+
+.page_map{background: url("../images/map_bg.png") #fff;background-size:750px 100%;}
+.map_china{width: 100%;top:145px;left:0;}
+.map_qingmai{width: 100%;top:755px;left:0; z-index:3;}
+.page_map .line{height: 1px;position: absolute;left:205px;overflow: hidden;}
+.page_map .line2{width:174px;top:580px;}
+.page_map .line2 img{width:174px;height:204px;}
+.page_map .line3{width:324px;top:350px;}
+.page_map .line3 img{width:324px;height:435px;}
+.page_map .line4{width:287px;top:530px;}
+.page_map .line4 img{width:287px;height:257px;}
+.page_map .line5{width:403px;top:475px;}
+.page_map .line5 img{width:403px;height:310px;}
+.page_map .line6{width:385px;top:505px;}
+.page_map .line6 img{width:385px;height:276px;}
+.page_map .line7{width:306px;top:595px;}
+.page_map .line7 img{width:306px;height:188px;}
+.page_map .biao{width: 44px;}
+.page_map .biao2{top:298px;left:506px;}
+.page_map .biao3{top:525px;left:360px;}
+.page_map .biao4{top:476px;left:474px;}
+.page_map .biao5{top:420px;left:580px;}
+.page_map .biao6{top:450px;left:570px;}
+.page_map .biao7{top:540px;left:490px;}
+.map_plane{width: 100%;left:200px;top:90px; z-index:4;}
+
+.page_bus{background: url("../images/bus_bg.png");background-size:750px}
+.bus_line{width: 100%;left:0;top:410px;}
+.bus{width: 182px;top:580px;left:36px;}
+
+/*.page_travel{background: url("../images/travel_bg.png");background-size:750px 100%;}*/
+.travel_img{width: 100%;left:0;top:160px;}
+.travel_text{width: 648px;background: white;margin-top:525px;margin-left:51px;}
+.travel_text img{position: relative;width: 100%;}
+.travel_text .travel_title{margin:20px 0 15px 0;}
+.page_travel .leaves{width: 100%;left:0;bottom:50px;}
+.page_travel_1 .travel_wa{margin:10px 0 85px 0;}
+.page_travel_2 .travel_wa{margin:10px 0 25px 0;}
+.page_travel_3 .travel_wa{margin:10px 0 30px 0;}
+
+.page_sp{z-index: 11;}
+.page_sp video{background:black;position: absolute; left: 0; top: 0; width: 100%; height: 100%; visibility: visible;z-index:11;}
+.page_sp .tg{padding:4pt 2%;position: absolute;left:2%;bottom:6%;z-index: 9999999999;background:rgba(0,0,0,0.5);color:rgba(255,255,255,0.8);-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);font-size: 22pt;color:white;border-radius:24pt;}
+	
+/*马晓伟 2017-9-26*/
+.load{ position:absolute; left:0; top:0; z-index:20;}
+.load p{ width:350px; height:10px; border:2px solid #0d428b; border-radius:4px; position:absolute; top:524px; left:50%; margin-left:-175px; overflow:hidden;}
+.load p span{ display:block; width:0; height:100%; background:#0d428b;}
+.load h1{ width:100%; height:65px; line-height:50px; font-size:24px; color:#2c2828; text-align:center; font-weight:normal;  position:absolute; top:540px; left:0; }
+.load h2{ width:100%; font-size:30px; font-family:Arial; color:#0d428b; text-align:center; font-weight:normal;  position:absolute; top:604px; left:0;} 
+
+
+.page_travel{ overflow:auto; position:relative;}
+.travel_bg1{ top:0; left:0;}
+.travel_bg2{ top:1000px; left:0;}
+.travel_bg3{ top:2000px; left:0;}
+
+.dot{ width:21px; height:21px; border-radius:50%; background:#0d428b; position:absolute;}
+.dot:after{ content:""; position:absolute; left:5px; top:5px; border:2px solid #fff; width:7px; height:7px; border-radius:50%;}
+.dot1{ left:136px; top:528px;}
+.dot2{ left:560px; top:1002px;}
+.dot3{ left:324px; top:1666px;}
+.dot4{ left:354px; top:2360px;}
+.bus_img{ width:173px; left:97px; top:428px; z-index:3;}
+.travel_title_1{ width:145px; left:179px; top:201px;}
+.travel_1{ width:320px; right:83px; top:177px;}
+.travel_wa_1{ width:440px; left:207px; top:571px;}
+.travel_title_2{ width:150px; left:369px; top:987px;}
+.travel_2{ width:355px; left:60px; top:933px;}
+.travel_wa_2{ width:415px; left:123px; top:1293px;}
+.travel_title_3{ width:155px; left:168px; top:1755px;}
+.travel_3{ width:360px; right:44px; top:1707px;}
+.travel_wa_3{ width:450px; left:207px; top:2054px;}
+
+.video_img{ width:600px; left:73px; top:2426px}
+.travel_title_4{ width:505px; left:136px; top:2800px;}
+.travel_wa_4{ width:490px; left:136px; top:2902px;}
+
+@-webkit-keyframes bus1{
+    0%{ -webkit-transform:translate(0,0); }
+	15%{ -webkit-transform:translate(-50px,250px); }
+	25%{ -webkit-transform:translate(-15px,300px); }
+    35%{-webkit-transform:translate(40px,380px);}
+	50%{-webkit-transform:translate(100px,400px);}
+	70%{-webkit-transform:translate(200px,420px);}
+	90%{-webkit-transform:translate(320px,470px);}
+	100%{-webkit-transform:translate(380px,520px);}
+}
+@keyframes bus1{
+    0%{ transform:translate(0,0); }
+	15%{ transform:translate(-50px,250px); }
+	25%{ transform:translate(-15px,300px); }
+    35%{transform:translate(40px,380px);}
+	50%{transform:translate(100px,400px);}
+	70%{transform:translate(200px,420px);}
+	90%{transform:translate(320px,470px);}
+	100%{transform:translate(380px,520px);}
+}
+.bus_ani1{ -webkit-animation: bus1 4s linear 1 forwards; animation: bus1 4s linear 1 forwards; }
+
+@-webkit-keyframes bus2{
+    0%{ -webkit-transform:translate(380px,520); }
+	20%{ -webkit-transform:translate(435px,660px); }
+	35%{ -webkit-transform:translate(460px,790px); }
+    50%{-webkit-transform:translate(450px,915px);}
+	60%{-webkit-transform:translate(430px,980px);}
+	70%{-webkit-transform:translate(395px,1035px);}
+	80%{-webkit-transform:translate(335px,1115px);}
+	100%{-webkit-transform:translate(175px,1190px);}
+}
+@keyframes bus2{
+    0%{ transform:translate(380px,520px); }
+	20%{ transform:translate(435px,660px); }
+	35%{ transform:translate(460px,790px); }
+    50%{transform:translate(450px,915px);}
+	60%{transform:translate(430px,980px);}
+	70%{transform:translate(395px,1035px);}
+	80%{transform:translate(335px,1115px);}
+	100%{transform:translate(175px,1190px);}
+}
+.bus_ani2{ -webkit-animation: bus2 4s linear 1 forwards; animation: bus2 4s linear 1 forwards; }
+
+@-webkit-keyframes bus3{
+    0%{ -webkit-transform:translate(175px,1190px); }
+	10%{ -webkit-transform:translate(35px,1245px); }
+	20%{ -webkit-transform:translate(-30px,1305px); }
+    28%{-webkit-transform:translate(-60px,1355px);}
+	40%{-webkit-transform:translate(-95px,1505px);}
+	60%{-webkit-transform:translate(-98px,1670px);}
+	70%{-webkit-transform:translate(-75px,1740px);}
+	90%{ -webkit-transform:translate(25px,1855px);}
+	100%{-webkit-transform:translate(155px,1880px);}
+}
+@keyframes bus3{
+    0%{ transform:translate(175px,1190px); }
+	10%{ transform:translate(35px,1245px); }
+	20%{ transform:translate(-30px,1305px); }
+    28%{ transform:translate(-60px,1355px);}
+	40%{ transform:translate(-95px,1505px);}
+	60%{ transform:translate(-98px,1670px);}
+	70%{ transform:translate(-75px,1740px);}
+	90%{ transform:translate(25px,1855px);}
+	100%{ transform:translate(155px,1880px);}
+}
+.bus_ani3{ -webkit-animation: bus3 4s linear 1 forwards; animation: bus3 4s linear 1 forwards; }
+.bus_state{ -webkit-transform:translate(175px,1190px); transform:translate(175px,1190px); }
+
+

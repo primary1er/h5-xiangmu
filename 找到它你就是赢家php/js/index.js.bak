@@ -1,0 +1,187 @@
+$(document).ready(function(e){
+    //加载动画
+    var iNow = 0;
+	var loadNum = document.getElementById('loadNum');
+	var timer = setInterval(function(){
+		if(iNow==100){
+			clearInterval(timer);
+			//audioAutoPlay('Jaudio');
+			$(".page_load").hide();
+			$(".page_index").fadeIn();
+			$(".index_find").show().addClass("slideInDown animated");
+			var tt = document.querySelector('.index_find');
+			tt.addEventListener("webkitAnimationEnd", function(){ //动画结束时事件
+				$(".index_jia").show().addClass("slideInDown animated");
+				tt = document.querySelector('.index_jia');
+				tt.addEventListener("webkitAnimationEnd", function(){ //动画结束时事件
+					$(".index_start").show().addClass("slideInDown animated");
+					tt = document.querySelector('.index_start');
+					tt.addEventListener("webkitAnimationEnd", function(){ //动画结束时事件
+						$(".index_jia_l,.index_jia_r").show().addClass("slideInDown animated");
+						tt = document.querySelector('.index_jia_l');
+						tt.addEventListener("webkitAnimationEnd", function(){ //动画结束时事件
+							$(".index_jia_l,.index_jia_r").removeClass("slideInDown").addClass("tada infinite");
+						}, false);
+					}, false);
+				}, false);
+			}, false);
+	    }else{
+			iNow += 10;
+			progressFn(iNow);
+		}
+	},100);
+	function progressFn(cent){
+		loadNum.innerHTML = cent + '<em>%</em>';
+	}
+
+	$('.index_start').click(function(){
+		$(".page_index").hide();
+		$(".page_door").fadeIn();
+		light_circle();
+	});
+	//门牌闪烁
+	setInterval(function(){
+		$('.doorplate i').addClass('light1');
+		setTimeout(function(){
+			$('.doorplate i').removeClass('light1');
+		},1000);
+		$('.lroom_menpai i').addClass('light1');
+		setTimeout(function(){
+			$('.lroom_menpai i').removeClass('light1');
+		},1000);
+	},3000);
+	setInterval(function(){
+		$('.lroom_yg i').addClass('light1');
+		setTimeout(function(){
+			$('.lroom_yg i').removeClass('light1');
+		},1000);
+		$('.lroom_cz i').addClass('light5');
+		setTimeout(function(){
+			$('.lroom_cz i').removeClass('light5');
+		},1000);
+	},4000);
+	setInterval(function(){
+		$('.lroom_dhj i').addClass('light3');
+		setTimeout(function(){
+			$('.lroom_dhj i').removeClass('light3');
+		},1000);
+	},2000);
+	setInterval(function(){
+		$('.lroom_cys i').addClass('light1');
+		setTimeout(function(){
+			$('.lroom_cys i').removeClass('light1');
+		},1000);
+	},2500);
+	setInterval(function(){
+		$('.lroom_jinyan i').addClass('light1');
+		setTimeout(function(){
+			$('.lroom_jinyan i').removeClass('light1');
+		},1000);
+	},3500);
+
+	function light_circle(){
+		var lightNum = -1;
+		var lightTimer = null;
+		var lightLen = $(".door_circle img").length;
+		lightTimer = setInterval(function(){
+			if(lightNum<=lightLen-1){
+				lightNum = lightNum + 1;
+				$(".door_circle img").eq(lightNum).css({"display":"block"}).siblings().css({"display":"none"});
+				if(lightNum==lightLen-1){
+					lightNum=-1;
+				}
+			}
+		},250);
+	}
+
+	//light_dian();
+	function light_dian(){
+		var lightNum = -1;
+		var lightTimer = null;
+		var lightLen = $(".doorplate img").length;
+		lightTimer = setInterval(function(){
+			if(lightNum<=lightLen-1){
+				lightNum = lightNum + 1;
+				$(".doorplate img").eq(lightNum).css({"display":"block"}).siblings().css({"display":"none"});
+				if(lightNum==lightLen-1){
+					lightNum = -1;
+					//clearInterval(lightTimer);
+				}
+			}
+		},100);
+	}
+
+	$('.door_circle_click').click(function(){
+		$('.page_door').css({"background-image":"url(images/open_door.jpg)"});
+		$('.tip,.door_clue').fadeIn(500);
+	});
+	$('.doorplate').click(function(){
+		$('.tip,.door_doorplate').fadeIn(500);
+	});
+	$('.door_close').click(function(){
+		$('.tip,.door_doorplate').fadeOut(500);
+	});
+
+	$('.door_start').click(function(){
+		$(".page_door,.tip").hide();
+		$(".page_all").fadeIn();
+	});
+
+	$('.clue_tip').click(function(){
+		$('.tip,.xsts').fadeIn(500);
+	});
+	$('.continue').click(function(){
+		$('.tip,.xsts').fadeOut(500);
+	});
+
+	$('.lroom_cz').click(function(){
+		$('.tip,.cltip').fadeIn(500);
+	});
+	$('.lroom_cys').click(function(){
+		$('.tip_ax .tip_wen').eq(0).attr("src","images/cys.png").css({"margin-top":"-15%"});
+		$('.tip,.cys').fadeIn(500);
+	});
+	$('.lroom_jinyan').click(function(){
+		$('.tip_ax .tip_wen').eq(1).attr("src","images/wybs.png").css({"margin-top":"5%"});
+		$('.tip,.jinyan').fadeIn(500);
+	});
+	$('.lroom_menpai').click(function(){
+		$('.tip_ax .tip_wen').eq(2).attr("src","images/menpai.png").css({"margin-top":"5%"});
+		$('.tip,.menpai').fadeIn(500);
+	});
+	$('.lroom_dhj').click(function(){
+		$('.tip_lj .tip_wen').eq(0).attr("src","images/dhj.png").css({"margin-top":"-15%"});
+		$('.tip,.dahuoji').fadeIn(500);
+	});
+	$('.lroom_yg').click(function(){
+		$('.tip_lj .tip_wen').eq(2).attr("src","images/yangang.png");
+		$('.tip,.yangang').fadeIn(500);
+	});
+	$('.lroom_cl,.lroom_sf,.lroom_dt').click(function(){
+		$('.tip,.three').fadeIn(500);
+	});
+	$('.lroom_close,.lroom_dq').click(function(){
+		$('.tip,.lroom_tip').fadeOut(500);
+	});
+	var data_page=1;
+	$('.tab_left').click(function(){
+		data_page--;
+		console.log(data_page);
+		if(data_page<0){
+			data_page=0;
+		}else{
+			$(".page_all").animate({top: "-"+100*data_page+"%"});
+		}
+		
+	});
+	$('.tab_right').click(function(){
+		data_page++;
+		console.log(data_page);
+		if(data_page>2){
+			data_page=2;
+		}else{
+			$(".page_all").animate({top: "-"+100*data_page+"%"});
+		}
+		
+	});
+});
